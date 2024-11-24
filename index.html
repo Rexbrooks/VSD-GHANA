@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSD-GHANA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .departments, .functions, .aim, .contact {
+            margin-bottom: 20px;
+        }
+        .disease-report {
+            background-color: #ffe6e6;
+            border: 2px solid red;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        .disease-report h2 {
+            color: red;
+        }
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .input-grid div {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to VSD-GHANA</header>
+
+    <section class="departments">
+        <h2>Departments</h2>
+        <ul>
+            <li>Laboratory</li>
+            <li>Field</li>
+            <li>Public Health</li>
+            <li>Epidemiology</li>
+        </ul>
+    </section>
+
+    <section class="functions">
+        <h2>Functions of VSD</h2>
+        <p>Describe the functions of the Ghana Veterinary Services Directorate here.</p>
+    </section>
+
+    <section class="aim">
+        <h2>AIM</h2>
+        <p>Provide the aim of the organization here.</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Details</h2>
+        <p>Provide contact details here.</p>
+    </section>
+
+    <section class="disease-report">
+        <h2>Disease Report</h2>
+        <div class="input-grid">
+            <div>
+                <label for="community">Community</label>
+                <input type="text" id="community" name="community">
+            </div>
+            <div>
+                <label for="postcode">Post Code</label>
+                <input type="text" id="postcode" name="postcode">
+            </div>
+            <div>
+                <label for="species">Species</label>
+                <input type="text" id="species" name="species">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div>
+                <label for="sex">Sex</label>
+                <select id="sex" name="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
+            <div>
+                <label for="district">District</label>
+                <input type="text" id="district" name="district">
+            </div>
+            <div>
+                <label for="region">Region</label>
+                <input type="text" id="region" name="region">
+            </div>
+            <div>
+                <label for="disease-onset">Disease Onset</label>
+                <input type="date" id="disease-onset" name="disease-onset">
+            </div>
+            <div>
+                <label for="signs">Signs</label>
+                <input type="text" id="signs" name="signs">
+            </div>
+            <div>
+                <label for="outcome">Outcome</label>
+                <input type="text" id="outcome" name="outcome">
+            </div>
+            <div>
+                <label for="morbidity">Morbidity</label>
+                <input type="number" id="morbidity" name="morbidity">
+            </div>
+            <div>
+                <label for="mortality">Mortality</label>
+                <input type="number" id="mortality" name="mortality">
+            </div>
+            <div>
+                <label for="suspected-disease">Suspected Disease</label>
+                <input type="text" id="suspected-disease" name="suspected-disease">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
